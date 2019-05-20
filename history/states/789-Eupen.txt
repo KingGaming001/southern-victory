@@ -1,0 +1,22 @@
+state = {
+    id = 789
+    name = STATE_789
+    manpower = 16760
+    state_category = town
+   
+    provinces = {
+        3488
+    }
+    
+    history = {
+        owner = GER
+        add_core_of = GER
+        
+        victory_points = {
+            3488 1
+        }
+        
+        buildings = {
+            infrastructure = 6
+    }
+}

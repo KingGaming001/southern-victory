@@ -1,0 +1,282 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Strelkovaya Diviziya"			# Rifle Division
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		#recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		#engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+	}
+}
+
+division_template = {
+	name = "Gornostrelkovaya Diviziya"		# Mountain Division
+	division_names_group = SOV_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }	
+		mountaineers = { x = 2 y = 2 }	
+		mountaineers = { x = 3 y = 0 }	
+		mountaineers = { x = 3 y = 1 }	
+		mountaineers = { x = 3 y = 2 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 		# Engineer bn
+		artillery = { x = 0 y = 1 } 	# Heavy Arty Regiment had 2x 122mm bn
+	}
+}
+
+division_template = {
+	name = "Kavaleriyskaya Diviziya" 	# Cavalry Division
+	division_names_group = SOV_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	#support = {
+	#	light_armor = { x = 0 y = 0 }	# Tank "rgt" of 64 light tanks, 28 ACs - (removed)
+	#}
+}
+
+##### OOB #####
+units = {
+#### Polish Units #####
+	division= {	# "1. Strelkovaya Diviziya"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 11285
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	# "2. Strelkovaya Diviziya"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 6579
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {	# "3. Strelkovaya Diviziya"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 277
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	# "4. Strelkovaya Diviziya"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 406
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	# "5. Strelkovaya Diviziya"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 110
+		}
+		location = 9341
+		division_template = "Strelkovaya Diviziya" 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+#### Russian Units ####
+	division= {	# "46ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 46
+		}
+		location = 9554
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}			
+	division= {	# "24ya 'Samaro-Ulyanovsk' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 215
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}		
+	division= {	# "31ya 'Stalingradskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 9288
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}			
+	division= {	# "61ya 'Turkestanskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 61
+		}
+		location = 9288
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}			
+	division= {	# "70ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 70
+		}
+		location = 9288
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "4ya 'Smolenskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11271
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}			
+	division= {	# "43ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 11271
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}			
+	division= {	# "81ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 81
+		}
+		location = 11271
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "11ya Kavaleriyskaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 11216
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "7ya Kavaleriyskaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3267
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "37ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 6220
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}			
+	division= {	# "8ya 'Minskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 6371
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}			
+	division= {	# "2ya 'Belorusskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3219
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}			
+	division= {	# "14ya 'Krivorozhskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 11241
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}			
+	division= {	# "52ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 52
+		}
+		location = 11241
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}			
+	division= {	# "55ya 'Kurskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 55
+		}
+		location = 11241
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}			
+}

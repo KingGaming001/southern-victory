@@ -1,0 +1,33 @@
+
+state = {
+    id = 788
+    name = "STATE_788"
+    manpower = 2912356
+
+
+    state_category = metropolis
+    
+    resources = {
+        oil = 160
+        aluminium = 4
+    }
+    
+    history = {
+        owner = USA
+        add_core_of = USA
+        add_core_of = CSA
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 4
+            air_base = 1
+            }
+
+        victory_points = {
+            3972 10
+        }
+    }
+
+        provinces = {
+        1998 2055 3972 4955 9773 9908 10740 10894 12301 12848 12893
+    }
+}
